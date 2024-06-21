@@ -20,12 +20,14 @@ namespace MvcMovie.Controllers
         }
 
         // GET: Movies
-        public async Task<IActionResult> Index(string movieGenre, string searchString)
+        public async Task<IActionResult> Index(string movieGenre, string searchString, string sortOrder)
         {
-            // Use LINQ to get list of genres.
+            ViewData["CurrentSort"] = sortOrder;
+
             IQueryable<string> genreQuery = from m in _context.Movie
                                             orderby m.Genre
                                             select m.Genre;
+
             var movies = from m in _context.Movie
                          select m;
 
@@ -39,6 +41,28 @@ namespace MvcMovie.Controllers
                 movies = movies.Where(x => x.Genre == movieGenre);
             }
 
+            switch (sortOrder)
+            {
+                case "id_asc":
+                    movies = movies.OrderBy(m => m.Id);
+                    break;
+                case "id_desc":
+                    movies = movies.OrderByDescending(m => m.Id);
+                    break;
+                case "price_asc":
+                    movies = movies.OrderBy(m => m.Price);
+                    break;
+                case "price_desc":
+                    movies = movies.OrderByDescending(m => m.Price);
+                    break;
+                case "date_desc":
+                    movies = movies.OrderByDescending(m => m.ReleaseDate);
+                    break;
+                default:
+                    movies = movies.OrderBy(m => m.Title);
+                    break;
+            }
+
             var movieGenreVM = new MovieGenreViewModel
             {
                 Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
@@ -47,6 +71,7 @@ namespace MvcMovie.Controllers
 
             return View(movieGenreVM);
         }
+
 
         // GET: Movies
         /*
@@ -87,7 +112,7 @@ namespace MvcMovie.Controllers
             return View(await movies.ToListAsync());
         }
         */
-        
+
         /*        
         public async Task<IActionResult> Index(string id)
         {
