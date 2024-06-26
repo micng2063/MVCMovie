@@ -56,7 +56,7 @@ namespace MvcMovie.Controllers
             var options = new Stripe.Checkout.SessionCreateOptions
             {
                 SuccessUrl = domain + $"Stripe/OrderConfirmation",
-                CancelUrl = domain + $"Stripe/Login",
+                CancelUrl = domain,
                 LineItems = new List<Stripe.Checkout.SessionLineItemOptions>(),
                 Mode = "payment",
                 CustomerEmail = "micnguyen2063@gmail.com"
@@ -80,16 +80,50 @@ namespace MvcMovie.Controllers
 
                 options.LineItems.Add(sessionListItem);
             }
+
             var service = new Stripe.Checkout.SessionService();
             Stripe.Checkout.Session session = service.Create(options);
+
+            TempData["Session"] = session.Id;
 
             Response.Headers.Add("Location", session.Url);
 
             return new StatusCodeResult(303);
         }
+
         public IActionResult OrderConfirmation()
         {
-            return View();
+            try
+            {
+                if (TempData["Session"] == null)
+                {
+                    throw new Exception("Session data not found.");
+                }
+
+                var service = new Stripe.Checkout.SessionService();
+                Stripe.Checkout.Session session = service.Get(TempData["Session"].ToString());
+
+                string customMessage = "";
+
+                if (session.PaymentStatus == "paid")
+                {
+                    customMessage = "You're all good to go!";
+                }
+                else
+                {
+                    customMessage = "Still working on this part.";
+                }
+
+                ViewBag.Message = customMessage;
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Message = $"Error: {ex.Message}";
+                return View();
+            }
         }
+
+
     }
 }
