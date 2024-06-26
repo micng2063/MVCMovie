@@ -30,5 +30,9 @@ namespace MvcMovie.Models
         [StringLength(5)]
         [Required]
         public string? Rating { get; set; }
+
+        [Range(1, 100)]
+        [Required]
+        public int Quantity { get; set; }
     }
 }

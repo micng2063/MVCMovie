@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\MVCMovie\\MvcMovie\\MvcMovie.csproj": {}
+    "D:\\MvcMovie\\MvcMovie\\MvcMovie.csproj": {}
   },
   "projects": {
-    "D:\\MVCMovie\\MvcMovie\\MvcMovie.csproj": {
+    "D:\\MvcMovie\\MvcMovie\\MvcMovie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\MVCMovie\\MvcMovie\\MvcMovie.csproj",
+        "projectUniqueName": "D:\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
         "projectName": "MvcMovie",
-        "projectPath": "D:\\MVCMovie\\MvcMovie\\MvcMovie.csproj",
+        "projectPath": "D:\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
         "packagesPath": "C:\\Users\\Thanh\\.nuget\\packages\\",
-        "outputPath": "D:\\MVCMovie\\MvcMovie\\obj\\",
+        "outputPath": "D:\\MvcMovie\\MvcMovie\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -68,6 +68,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.16, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[45.0.0, )"
             }
           },
           "imports": [
