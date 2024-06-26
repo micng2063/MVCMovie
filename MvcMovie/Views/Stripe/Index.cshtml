@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ProductEntity>
+
+@{
+    ViewData["Title"] = "Stripe";
+}
+
+<h2>Checkout</h2>
+
+<table class="table table-responsive table-light table-bordered" style="width:100%">
+    <tr>
+        <th>Product Name</th>
+        <th>Rate</th>
+        <th>Quantity</th>
+        <th>Product Image</th>
+        <th>Total</th>
+    </tr>
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Product</td>
+                <td>@item.Rate</td>
+                <td>@item.Quantity</td>
+                <td><img src="@item.ImagePath" style="width:120px; height:150px" /></td>
+                <td>@(item.Rate * item.Quantity)</td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr><td colspan="5">No products available</td></tr>
+    }
+</table>
+
+<br/>
+
+<p>
+    <a asp-action="Checkout" asp-controller="Stripe" value="Checkout">Checkout</a>
+</p>

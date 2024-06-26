@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w+Ix5w0imYE=",
+  "dgSpecHash": "w7A4g5VwPh4=",
   "success": true,
-  "projectFilePath": "D:\\MVCMovie\\MvcMovie\\MvcMovie.csproj",
+  "projectFilePath": "D:\\MvcMovie\\MvcMovie\\MvcMovie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Thanh\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Thanh\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

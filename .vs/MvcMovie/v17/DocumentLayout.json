@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\MVCMovie\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\controllers\\stripecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\controllers\\stripecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\views\\stripe\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\views\\stripe\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\views\\stripe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\views\\stripe\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OrderConfirmation.cshtml",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
+              "RelativeDocumentMoniker": "MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
+              "RelativeToolTip": "MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T17:47:50.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Views\\Stripe\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcMovie\\Views\\Stripe\\Index.cshtml",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Views\\Stripe\\Index.cshtml",
+              "RelativeToolTip": "MvcMovie\\Views\\Stripe\\Index.cshtml",
+              "ViewState": "AQIAABoAAAAAAAAAAAAowB8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-26T17:28:26.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\appsettings.json",
-              "RelativeDocumentMoniker": "MvcMovie\\appsettings.json",
-              "ToolTip": "D:\\MVCMovie\\MvcMovie\\appsettings.json",
-              "RelativeToolTip": "MvcMovie\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-26T15:54:18.839Z",
+              "Title": "StripeController.cs",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Controllers\\StripeController.cs",
+              "RelativeDocumentMoniker": "MvcMovie\\Controllers\\StripeController.cs",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Controllers\\StripeController.cs",
+              "RelativeToolTip": "MvcMovie\\Controllers\\StripeController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T16:16:55.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProductEntity.cs",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Models\\ProductEntity.cs",
+              "RelativeDocumentMoniker": "MvcMovie\\Models\\ProductEntity.cs",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Models\\ProductEntity.cs",
+              "RelativeToolTip": "MvcMovie\\Models\\ProductEntity.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T16:13:32.232Z",
               "EditorCaption": ""
             }
           ]
