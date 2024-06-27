@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "D:\\MVCMovie\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\controllers\\checkoutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\models\\ticket.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\controllers\\stripecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\controllers\\stripecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\views\\stripe\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\views\\stripe\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,40 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderConfirmation.cshtml",
-              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
-              "RelativeDocumentMoniker": "MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
-              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
-              "RelativeToolTip": "MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-26T17:47:50.643Z",
+              "Title": "Ticket.cs",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Models\\Ticket.cs",
+              "RelativeDocumentMoniker": "MvcMovie\\Models\\Ticket.cs",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Models\\Ticket.cs",
+              "RelativeToolTip": "MvcMovie\\Models\\Ticket.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:14:52.733Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StripeController.cs",
-              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Controllers\\StripeController.cs",
-              "RelativeDocumentMoniker": "MvcMovie\\Controllers\\StripeController.cs",
-              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Controllers\\StripeController.cs",
-              "RelativeToolTip": "MvcMovie\\Controllers\\StripeController.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAQwH0AAAAAAAAA",
+              "Title": "CheckoutController.cs",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Controllers\\CheckoutController.cs",
+              "RelativeDocumentMoniker": "MvcMovie\\Controllers\\CheckoutController.cs",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Controllers\\CheckoutController.cs",
+              "RelativeToolTip": "MvcMovie\\Controllers\\CheckoutController.cs",
+              "ViewState": "AQIAAGcAAAAAAAAAAAAcwHcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T16:16:55.911Z",
+              "WhenOpened": "2024-06-27T14:51:42.852Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductEntity.cs",
-              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Models\\ProductEntity.cs",
-              "RelativeDocumentMoniker": "MvcMovie\\Models\\ProductEntity.cs",
-              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Models\\ProductEntity.cs",
-              "RelativeToolTip": "MvcMovie\\Models\\ProductEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Title": "StripeController.cs",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Controllers\\StripeController.cs",
+              "RelativeDocumentMoniker": "MvcMovie\\Controllers\\StripeController.cs",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Controllers\\StripeController.cs",
+              "RelativeToolTip": "MvcMovie\\Controllers\\StripeController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAA0wH0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T16:13:32.232Z",
+              "WhenOpened": "2024-06-26T16:16:55.911Z",
               "EditorCaption": ""
             }
           ]

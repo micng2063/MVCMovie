@@ -1,0 +1,51 @@
+﻿@model IEnumerable<MvcMovie.Models.Ticket>
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+
+<h2>Checkout</h2>
+
+<table class="table table-responsive table-light table-bordered" style="width:100%">
+    <tr>
+        <th>Ticket Type</th>
+        <th>Description</th>
+        <th>Rate (USD)</th>
+        <th>Quantity</th>
+        <th>Total (USD)</th>
+    </tr>
+
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.TicketType</td>
+                <td>@item.Description</td>
+                <td>@item.Price</td>
+                <td>@item.Quantity</td>
+                <td>@(item.Price * item.Quantity)</td>
+            </tr>
+        }
+    }
+    else
+    {
+        <tr><td colspan="5">No tickets available</td></tr>
+    }
+</table>
+
+<br />
+
+<form asp-action="CheckOut" asp-controller="Checkout" method="post">
+    @if (Model != null)
+    {
+        foreach (var item in Model)
+        {
+            <input type="hidden" name="TicketType" value="@item.TicketType" />
+            <input type="hidden" name="Description" value="@item.Description" />
+            <input type="hidden" name="Price" value="@item.Price" />
+            <input type="hidden" name="Quantity" value="@item.Quantity" />
+        }
+    }
+    <button type="submit" class="btn btn-primary">Checkout</button>
+</form>
