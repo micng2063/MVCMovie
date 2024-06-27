@@ -37,67 +37,61 @@ namespace MvcMovie.Controllers
 
             return View(ticketList);
         }
-        public IActionResult CheckOut()
+
+        [HttpPost]
+        public IActionResult CheckOut(string[] TicketType, string[] Description, double[] Prices, int[] Quantities)
         {
-            List<Ticket> ticketList = new List<Ticket>
+            var ticketList = new List<Ticket>();
+
+            for (int i = 0; i < TicketType.Length; i++)
             {
-                new Ticket
+                ticketList.Add(new Ticket
                 {
-                    TicketType = "Adult",
-                    Price = 9.75,
-                    Quantity = 1,
-                    Description = ""
-                },
-                new Ticket
-                {
-                    TicketType = "Senior",
-                    Price = 9.25,
-                    Quantity = 1,
-                    Description = "Age 60+"
-                },
-                new Ticket
-                {
-                    TicketType = "Child",
-                    Price = 9.00,
-                    Quantity = 1,
-                    Description = "Age 1-11"
-                }
-            };
+                    TicketType = TicketType[i],
+                    Description = Description[i],
+                    Price = Prices[i],
+                    Quantity = Quantities[i]
+                });
+            }
 
             var domain = "https://localhost:7145/";
 
-            var options = new Stripe.Checkout.SessionCreateOptions
+            var options = new SessionCreateOptions
             {
-                SuccessUrl = domain + $"Checkout/OrderConfirmation",
+                SuccessUrl = domain + "Checkout/OrderConfirmation",
                 CancelUrl = domain,
-                LineItems = new List<Stripe.Checkout.SessionLineItemOptions>(),
+                LineItems = new List<SessionLineItemOptions>(),
                 Mode = "payment",
                 CustomerEmail = "micnguyen2063@gmail.com"
             };
 
             foreach (var item in ticketList)
             {
-                var sessionListItem = new SessionLineItemOptions
+                if (item.Quantity > 0)
                 {
-                    PriceData = new SessionLineItemPriceDataOptions
+                    var sessionListItem = new SessionLineItemOptions
                     {
-                        UnitAmount = (long)(item.Price * item.Quantity * 100),
-                        Currency = "usd",
-                        ProductData = new SessionLineItemPriceDataProductDataOptions
+                        PriceData = new SessionLineItemPriceDataOptions
                         {
-                            Name = item.TicketType.ToString(),
-                        }
-                    },
-                    Quantity = item.Quantity
-                };
+                            UnitAmount = (long)(item.Price * 100),
+                            Currency = "usd",
+                            ProductData = new SessionLineItemPriceDataProductDataOptions
+                            {
+                                Name = item.TicketType
+                            }
+                        },
+                        Quantity = item.Quantity
+                    };
 
-                options.LineItems.Add(sessionListItem);
+                    options.LineItems.Add(sessionListItem);
+                }
             }
 
-            var service = new Stripe.Checkout.SessionService();
-            Stripe.Checkout.Session session = service.Create(options);
+            var service = new SessionService();
+            Session session = service.Create(options);
 
             TempData["Session"] = session.Id;
+            TempData["TicketList"] = Newtonsoft.Json.JsonConvert.SerializeObject(ticketList);
 
             Response.Headers.Add("Location", session.Url);
 
@@ -108,26 +102,23 @@ namespace MvcMovie.Controllers
         {
             try
             {
-                if (TempData["Session"] == null)
+                if (TempData["Session"] == null || TempData["TicketList"] == null)
                 {
                     throw new Exception("Session data not found.");
                 }
 
-                var service = new Stripe.Checkout.SessionService();
-                Stripe.Checkout.Session session = service.Get(TempData["Session"].ToString());
+                var service = new SessionService();
+                Session session = service.Get(TempData["Session"].ToString());
 
-                string customMessage = "";
+                string customMessage = session.PaymentStatus == "paid"
+                    ? "You're all good to go!"
+                    : "Still working on this part.";
 
-                if (session.PaymentStatus == "paid")
-                {
-                    customMessage = "You're all good to go!";
-                }
-                else
-                {
-                    customMessage = "Still working on this part.";
-                }
+                var ticketList = Newtonsoft.Json.JsonConvert.DeserializeObject<List<Ticket>>(TempData["TicketList"].ToString());
 
                 ViewBag.Message = customMessage;
+                ViewBag.Receipt = GenerateReceipt(ticketList);
+
                 return View();
             }
             catch (Exception ex)
@@ -137,5 +128,23 @@ namespace MvcMovie.Controllers
             }
         }
 
+        private string GenerateReceipt(List<Ticket> ticketList)
+        {
+            var totalAmount = 0.0;
+            var receipt = $"Receipt - {DateTime.Now:yyyy-MM-dd HH:mm:ss}\n";
+            receipt += new string('_', 40) + "\n\n";
+
+            foreach (var ticket in ticketList)
+            {
+                var itemTotal = ticket.Price * ticket.Quantity;
+                receipt += $"{ticket.TicketType}: {ticket.Quantity} x ${ticket.Price:F2} = ${itemTotal:F2}\n";
+                totalAmount += itemTotal;
+            }
+
+            receipt += new string('_', 40) + "\n";
+            receipt += $"Total Amount: ${totalAmount:F2}\n";
+
+            return receipt;
+        }
     }
 }

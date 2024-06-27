@@ -6,46 +6,66 @@
 
 <h2>Checkout</h2>
 
-<table class="table table-responsive table-light table-bordered" style="width:100%">
-    <tr>
-        <th>Ticket Type</th>
-        <th>Description</th>
-        <th>Rate (USD)</th>
-        <th>Quantity</th>
-        <th>Total (USD)</th>
-    </tr>
-
-    @if (Model != null)
-    {
-        foreach (var item in Model)
-        {
-            <tr>
-                <td>@item.TicketType</td>
-                <td>@item.Description</td>
-                <td>@item.Price</td>
-                <td>@item.Quantity</td>
-                <td>@(item.Price * item.Quantity)</td>
-            </tr>
-        }
-    }
-    else
-    {
-        <tr><td colspan="5">No tickets available</td></tr>
-    }
-</table>
-
-<br />
-
 <form asp-action="CheckOut" asp-controller="Checkout" method="post">
-    @if (Model != null)
-    {
-        foreach (var item in Model)
-        {
-            <input type="hidden" name="TicketType" value="@item.TicketType" />
-            <input type="hidden" name="Description" value="@item.Description" />
-            <input type="hidden" name="Price" value="@item.Price" />
-            <input type="hidden" name="Quantity" value="@item.Quantity" />
-        }
-    }
+    <table class="table table-responsive table-light table-bordered" style="width:100%">
+        <thead>
+            <tr>
+                <th>Ticket Type</th>
+                <th>Description</th>
+                <th>Price (USD)</th>
+                <th>Quantity</th>
+                <th>Total (USD)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                var index = 0;
+                foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.TicketType</td>
+                        <td>@item.Description</td>
+                        <td>@item.Price.ToString("F2")</td>
+                        <td>
+                            <input type="number" name="Quantities" value="@item.Quantity" min="0" class="form-control quantity-input" data-index="@index" data-price="@item.Price" />
+                            <input type="hidden" name="TicketType" value="@item.TicketType" />
+                            <input type="hidden" name="Description" value="@item.Description" />
+                            <input type="hidden" name="Prices" value="@item.Price" />
+                        </td>
+                        <td class="total-price">@((item.Price * item.Quantity).ToString("F2"))</td>
+                    </tr>
+                    index++;
+                }
+            }
+            else
+            {
+                <tr><td colspan="5">No tickets available</td></tr>
+            }
+        </tbody>
+    </table>
+
+    <br />
+
     <button type="submit" class="btn btn-primary">Checkout</button>
 </form>
+
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const quantityInputs = document.querySelectorAll('.quantity-input');
+
+            quantityInputs.forEach(input => {
+                input.addEventListener('input', function () {
+                    const index = this.getAttribute('data-index');
+                    const price = parseFloat(this.getAttribute('data-price'));
+                    const quantity = parseInt(this.value);
+                    const totalCell = this.closest('tr').querySelector('.total-price');
+
+                    const total = price * quantity;
+                    totalCell.textContent = total.toFixed(2);
+                });
+            });
+        });
+    </script>
+}

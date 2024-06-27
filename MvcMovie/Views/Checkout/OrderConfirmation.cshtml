@@ -2,4 +2,11 @@
     ViewData["Title"] = "Order Confirmation";
 }
 
+<h2>Order Confirmation</h2>
+
 <p>@ViewBag.Message</p>
+
+@if (ViewBag.Receipt != null)
+{
+    <pre>@ViewBag.Receipt</pre>
+}
