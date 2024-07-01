@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bFHjtXtRoFtGFbPM6n+XIZlsQr/wqq/vu6aPdDrYb/s=",
+  "Hash": "Df68xlpMg0VWSxfHJYQoFgzet9D3lorXOkiWRjXFWpU=",
   "Source": "MvcMovie",
   "BasePath": "_content/MvcMovie",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\MvcMovie\\MvcMovie\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MvcMovie.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\MvcMovie\\MvcMovie\\wwwroot\\css\\seat-selection.css",
+      "SourceId": "MvcMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MvcMovie\\MvcMovie\\wwwroot\\",
+      "BasePath": "_content/MvcMovie",
+      "RelativePath": "css/seat-selection.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\seat-selection.css"
     },
     {
       "Identity": "D:\\MvcMovie\\MvcMovie\\wwwroot\\css\\site.css",
@@ -129,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Image2.jpeg"
+    },
+    {
+      "Identity": "D:\\MvcMovie\\MvcMovie\\wwwroot\\js\\seat-selection.js",
+      "SourceId": "MvcMovie",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\MvcMovie\\MvcMovie\\wwwroot\\",
+      "BasePath": "_content/MvcMovie",
+      "RelativePath": "js/seat-selection.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\seat-selection.js"
     },
     {
       "Identity": "D:\\MvcMovie\\MvcMovie\\wwwroot\\js\\site.js",

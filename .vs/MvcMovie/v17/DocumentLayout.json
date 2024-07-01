@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\MVCMovie\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\controllers\\stripecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\controllers\\stripecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\wwwroot\\css\\seat-selection.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\wwwroot\\css\\seat-selection.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\views\\stripe\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\views\\stripe\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\models\\productentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\views\\seatselection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\views\\seatselection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\controllers\\seatselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\controllers\\seatselection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\wwwroot\\js\\seat-selection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\wwwroot\\js\\seat-selection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrderConfirmation.cshtml",
-              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
-              "RelativeDocumentMoniker": "MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
-              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
-              "RelativeToolTip": "MvcMovie\\Views\\Stripe\\OrderConfirmation.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MvcMovie\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MvcMovie\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-26T17:47:50.643Z",
+              "WhenOpened": "2024-06-28T15:53:39.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "seat-selection.js",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\wwwroot\\js\\seat-selection.js",
+              "RelativeDocumentMoniker": "MvcMovie\\wwwroot\\js\\seat-selection.js",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\wwwroot\\js\\seat-selection.js",
+              "RelativeToolTip": "MvcMovie\\wwwroot\\js\\seat-selection.js",
+              "ViewState": "AQIAADEAAAAAAAAAAAAUwEgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-28T15:20:03.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StripeController.cs",
-              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Controllers\\StripeController.cs",
-              "RelativeDocumentMoniker": "MvcMovie\\Controllers\\StripeController.cs",
-              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Controllers\\StripeController.cs",
-              "RelativeToolTip": "MvcMovie\\Controllers\\StripeController.cs",
-              "ViewState": "AQIAAHEAAAAAAAAAAAAQwH0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T16:16:55.911Z",
+              "Title": "seat-selection.css",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\wwwroot\\css\\seat-selection.css",
+              "RelativeDocumentMoniker": "MvcMovie\\wwwroot\\css\\seat-selection.css",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\wwwroot\\css\\seat-selection.css",
+              "RelativeToolTip": "MvcMovie\\wwwroot\\css\\seat-selection.css",
+              "ViewState": "AQIAAGAAAAAAAAAAAAAAAGYAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-28T15:19:51.42Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ProductEntity.cs",
-              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Models\\ProductEntity.cs",
-              "RelativeDocumentMoniker": "MvcMovie\\Models\\ProductEntity.cs",
-              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Models\\ProductEntity.cs",
-              "RelativeToolTip": "MvcMovie\\Models\\ProductEntity.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Views\\SeatSelection\\Index.cshtml",
+              "RelativeDocumentMoniker": "MvcMovie\\Views\\SeatSelection\\Index.cshtml",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Views\\SeatSelection\\Index.cshtml",
+              "RelativeToolTip": "MvcMovie\\Views\\SeatSelection\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-28T15:19:09.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeatSelection.cs",
+              "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Controllers\\SeatSelection.cs",
+              "RelativeDocumentMoniker": "MvcMovie\\Controllers\\SeatSelection.cs",
+              "ToolTip": "D:\\MVCMovie\\MvcMovie\\Controllers\\SeatSelection.cs",
+              "RelativeToolTip": "MvcMovie\\Controllers\\SeatSelection.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-26T16:13:32.232Z",
+              "WhenOpened": "2024-06-28T15:14:55.951Z",
               "EditorCaption": ""
             }
           ]
