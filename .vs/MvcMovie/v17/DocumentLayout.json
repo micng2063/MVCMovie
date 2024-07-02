@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\MVCMovie\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\views\\seatselection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\views\\seatselection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\wwwroot\\js\\seat-selection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\wwwroot\\js\\seat-selection.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\views\\seatselection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|solutionrelative:mvcmovie\\views\\seatselection\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8971B0D9-5E1E-407E-AA02-3234E24C790B}|MvcMovie\\MvcMovie.csproj|d:\\mvcmovie\\mvcmovie\\wwwroot\\css\\seat-selection.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -38,31 +38,30 @@
               "RelativeToolTip": "MvcMovie\\wwwroot\\css\\seat-selection.css",
               "ViewState": "AQIAAGAAAAAAAAAAAAAAAG4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-07-02T16:13:50.17Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-02T16:13:50.17Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "seat-selection.js",
               "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\wwwroot\\js\\seat-selection.js",
               "RelativeDocumentMoniker": "MvcMovie\\wwwroot\\js\\seat-selection.js",
               "ToolTip": "D:\\MVCMovie\\MvcMovie\\wwwroot\\js\\seat-selection.js",
               "RelativeToolTip": "MvcMovie\\wwwroot\\js\\seat-selection.js",
-              "ViewState": "AQIAADYAAAAAAAAAAAAUwDwAAAABAAAA",
+              "ViewState": "AQIAAHoAAAAAAAAAAAAgwHsAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2024-06-28T15:20:03.14Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\MVCMovie\\MvcMovie\\Views\\SeatSelection\\Index.cshtml",
               "RelativeDocumentMoniker": "MvcMovie\\Views\\SeatSelection\\Index.cshtml",
               "ToolTip": "D:\\MVCMovie\\MvcMovie\\Views\\SeatSelection\\Index.cshtml",
               "RelativeToolTip": "MvcMovie\\Views\\SeatSelection\\Index.cshtml",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAAwE0AAAA3AAAA",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAwEoAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-06-28T15:19:09.942Z",
               "EditorCaption": ""
@@ -77,8 +76,7 @@
               "RelativeToolTip": "MvcMovie\\Controllers\\SeatSelection.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T15:14:55.951Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T15:14:55.951Z"
             }
           ]
         }

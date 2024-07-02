@@ -5,14 +5,18 @@ const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 const seatIds = document.getElementById("seat-ids");
 
+const sessionTimeout = 1 * 60 * 1000; // 1 minute in milliseconds
+let lastActivityTime = Date.now();
+
 populateUI();
 
 let ticketPrice = +movieSelect.value;
 
 // Save selected movie index and price
 function setMovieData(movieIndex, moviePrice) {
-    localStorage.setItem("selectedMovieIndex", movieIndex);
-    localStorage.setItem("selectedMoviePrice", moviePrice);
+    sessionStorage.setItem("selectedMovieIndex", movieIndex);
+    sessionStorage.setItem("selectedMoviePrice", moviePrice);
+    resetSessionTimeout();
 }
 
 // Update total and count
@@ -25,7 +29,7 @@ function updateSelectedCount() {
         return `${row}${seatNumber}`;
     });
 
-    localStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
+    sessionStorage.setItem("selectedSeats", JSON.stringify(seatsIndex));
 
     const selectedSeatsCount = selectedSeats.length;
 
@@ -35,11 +39,12 @@ function updateSelectedCount() {
     seatIds.innerText = seatsIndex.length > 0 ? seatsIndex.join(", ") : "None";
 
     setMovieData(movieSelect.selectedIndex, movieSelect.value);
+    resetSessionTimeout();
 }
 
-// Get data from localstorage and populate UI
+// Get data from sessionStorage and populate UI
 function populateUI() {
-    const selectedSeats = JSON.parse(localStorage.getItem("selectedSeats"));
+    const selectedSeats = JSON.parse(sessionStorage.getItem("selectedSeats"));
 
     if (selectedSeats !== null && selectedSeats.length > 0) {
         seats.forEach(seat => {
@@ -53,11 +58,13 @@ function populateUI() {
         });
     }
 
-    const selectedMovieIndex = localStorage.getItem("selectedMovieIndex");
+    const selectedMovieIndex = sessionStorage.getItem("selectedMovieIndex");
 
     if (selectedMovieIndex !== null) {
         movieSelect.selectedIndex = selectedMovieIndex;
     }
+
+    resetSessionTimeout();
 }
 
 // Movie select event
@@ -81,3 +88,40 @@ container.addEventListener("click", (e) => {
 
 // Initial count and total set
 updateSelectedCount();
+
+// Reset seat selection
+function resetSeatSelection() {
+    // Clear session storage
+    sessionStorage.removeItem("selectedSeats");
+    sessionStorage.removeItem("selectedMovieIndex");
+    sessionStorage.removeItem("selectedMoviePrice");
+
+    // Clear selected seats in UI
+    seats.forEach(seat => {
+        seat.classList.remove("selected");
+    });
+
+    // Reset count and total
+    count.innerText = 0;
+    total.innerText = 0;
+    seatIds.innerText = "None";
+
+    // Reset movie selection
+    movieSelect.selectedIndex = 0;
+    ticketPrice = +movieSelect.value;
+}
+
+// Reset session timeout
+function resetSessionTimeout() {
+    lastActivityTime = Date.now();
+}
+
+// Check for session timeout
+setInterval(() => {
+    if (Date.now() - lastActivityTime >= sessionTimeout) {
+        resetSeatSelection();
+    }
+}, 100);
+
+// Reset session timeout on page load (optional)
+resetSessionTimeout();
