@@ -5,7 +5,7 @@ const total = document.getElementById("total");
 const movieSelect = document.getElementById("movie");
 const seatIds = document.getElementById("seat-ids");
 
-const sessionTimeout = 1 * 60 * 1000; // 1 minute in milliseconds
+const sessionTimeout = 10 * 60 * 1000; // 10 minutes in milliseconds
 let lastActivityTime = Date.now();
 
 populateUI();
